@@ -26,6 +26,42 @@
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
+}
+
+.Headline {
+  color: #ffffff;
+  font-size: 5rem;
+}
+
+.Headline p {
+  overflow: hidden;
+  border-right: .15em solid #61dafb;
+  padding: 0.02em;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.02em;
+  animation:
+          typing 3.5s steps(20, end),
+          blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #61dafb;
+  }
 }
 
 @keyframes App-logo-spin {
