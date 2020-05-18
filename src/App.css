@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-header, section {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -27,6 +27,28 @@
 .App-link {
   color: #61dafb;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+li {
+  text-align: left;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+i {
+  margin-right: 0.5em;
 }
 
 .Headline {
@@ -44,6 +66,35 @@
   animation:
           typing 3.5s steps(20, end),
           blink-caret 1s step-end infinite;
+}
+
+.subtitle {
+  color: #61dafb;
+  border-bottom: .1em solid #61dafb;
+  padding-bottom: .5em;
+}
+
+.profile {
+  display: inline-block;
+  text-align: center;
+}
+
+.eachdiv {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 0.7em;
+}
+
+.mt-3 {
+  margin-top: 3em;
 }
 
 @keyframes typing {
