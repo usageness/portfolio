@@ -24,6 +24,17 @@
   color: white;
 }
 
+section_white {
+  background-color: #dcdfe4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
 .App-link {
   color: #61dafb;
   text-decoration: none;
@@ -45,6 +56,11 @@ li {
 a {
   color: #ffffff;
   text-decoration: none;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #61dafb;
 }
 
 i {
@@ -74,6 +90,12 @@ i {
   padding-bottom: .5em;
 }
 
+section_white .subtitle {
+  color: #455c82;
+  border-bottom: .1em solid #455c82;
+  padding-bottom: .5em;
+}
+
 .profile {
   display: inline-block;
   text-align: center;
@@ -93,8 +115,30 @@ i {
   font-size: 0.7em;
 }
 
-.mt-3 {
-  margin-top: 3em;
+.sub_description {
+  margin-bottom: 2em;
+  font-size: 0.5em;
+}
+
+.flex-center {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  vertical-align: top;
+  text-align: center;
+  margin: auto;
+}
+
+.skillset {
+  display: inline-block;
+  width: 10em;
+  text-align: center;
+  vertical-align: top;
+}
+
+.mt-8 {
+  margin-top: 8em;
 }
 
 @keyframes typing {
