@@ -2,8 +2,8 @@ import React from 'react';
 import ppic from './img/ppic.jpg';
 import html_icon from './img/icon_html.png';
 import js_icon from './img/icon_js.png';
-import node_icon from './img/icon_node.svg';
-import react_icon from './img/icon_react.svg';
+import node_icon from './img/icon_node.png';
+import react_icon from './img/icon_react.png';
 import vue_icon from './img/icon_vue.png';
 import express_icon from './img/icon_express.png';
 import './App.css';
@@ -55,10 +55,12 @@ function App() {
                     </p>
                 </div>
             </section>
-            <section_white id="skills" className="">
+            <section_white className="">
                 <p className="subtitle">Skills</p>
                 <p className="description">웹에 필요한 전반적인 지식을 바탕으로 다양한 기술을 폭 넓게 공부하고 있습니다.</p>
+                <p className="name">Intermediate</p>
                 <div className="flex-center">
+
                     <div className="skillset">
                         <img
                             className='rounded-circle'
@@ -86,6 +88,9 @@ function App() {
                         />
                         <p>Node.js</p>
                     </div>
+                </div>
+                <p className="name">Basic</p>
+                <div className="flex-center">
                     <div className="skillset">
                         <img
                             className='rounded-circle'

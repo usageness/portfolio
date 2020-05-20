@@ -135,6 +135,14 @@ section_white .subtitle {
   width: 10em;
   text-align: center;
   vertical-align: top;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.skillset:hover {
+  filter:blur(2px);
+  -webkit-filter:blur(2px);
+  opacity: .8;
 }
 
 .mt-8 {
@@ -165,5 +173,14 @@ section_white .subtitle {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes skillfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
