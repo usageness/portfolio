@@ -6,6 +6,8 @@ import node_icon from './img/icon_node.png';
 import react_icon from './img/icon_react.png';
 import vue_icon from './img/icon_vue.png';
 import express_icon from './img/icon_express.png';
+import army_logo from './img/project_logo_army.png';
+import mapleitem_logo from './img/project_logo_mapleitem.png';
 import './App.css';
 
 function App() {
@@ -55,7 +57,7 @@ function App() {
                     </p>
                 </div>
             </section>
-            <section_white className="">
+            <section_white id="skills">
                 <p className="subtitle">Skills</p>
                 <p className="description">웹에 필요한 전반적인 지식을 바탕으로 다양한 기술을 폭 넓게 공부하고 있습니다.</p>
                 <p className="name">Intermediate</p>
@@ -119,6 +121,68 @@ function App() {
                         <p>React</p>
                     </div>
                 </div>
+            </section_white>
+            <section_white id="project">
+                <p className="subtitle">Projects</p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                2020. 01
+                            </td>
+                            <td>
+                                <img
+                                    className='rounded-circle'
+                                    src={mapleitem_logo}
+                                    width='120'
+                                    alt='mapleitem_logo'
+                                />
+                            </td>
+                            <td>
+                                <p className="tableTitle">메이플 추가옵션 분석기</p>
+                                <ul>
+                                    <li>- 웹 사이트 (현재 서비스 중)</li>
+                                    <li>- 온라인게임 '메이플스토리'의 아이템 가치를 분석합니다.</li>
+                                    <li>- <a href="http://mapleitem.com" target="_blank">service url: mapleitem.com</a></li>
+                                    <li>
+                                        <span className="detailSkill">Node.js</span>
+                                        <span className="detailSkill">express</span>
+                                        <span className="detailSkill">JavaScript</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2019. 07
+                            </td>
+                            <td>
+                                <img
+                                    className='rounded-circle'
+                                    src={army_logo}
+                                    width='120'
+                                    alt='army_logo'
+                                />
+                            </td>
+                            <td>
+                                <p className="tableTitle">Army Q&A</p>
+                                <ul>
+                                    <li>- 웹 사이트</li>
+                                    <li>- 군 생활에 필요한 정보를 묻고, 답할 수 있는 페이지입니다.</li>
+                                    <li>- 2019 국방부오픈소스아카데미 참여 프로젝트</li>
+                                    <li>- <a href="https://github.com/kyr9389/OSSCAMP_Q-A" target="_blank">github link</a></li>
+                                    <li>
+                                        <span className="detailSkill">Node.js</span>
+                                        <span className="detailSkill">Vue.js</span>
+                                        <span className="detailSkill">element.ui</span>
+                                        <span className="detailSkill">JavaScript</span>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
             </section_white>
             <footer>
 
