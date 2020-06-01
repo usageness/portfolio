@@ -41,9 +41,7 @@ function App() {
                             <li className="name">김용래_usage</li>
                             <li className="description">Front-end developer</li>
                             <li className="description">1997.07.27</li>
-                        </ul>
-                        <ul className="mt-8">
-                            <li className="description"><a href="mailto:kyr9389@naver.com"><i className="fa fa-envelope" aria-hidden="true"></i>kyr9389@naver.com</a></li>
+                            <li className="description mt-3"><a href="mailto:kyr9389@naver.com"><i className="fa fa-envelope" aria-hidden="true"></i>kyr9389@naver.com</a></li>
                             <li className="description"><a href="https://github.com/kyr9389"><i className="fa fa-github" aria-hidden="true"></i>https://github.com/kyr9389</a></li>
                         </ul>
                     </p>
@@ -57,7 +55,7 @@ function App() {
                         </ul>
                     </p>
                 </div>
-                <a href="#skills"> Next </a>
+                <p className="mb-3"> <a href="#skills"> Next </a></p>
             </section>
             <section_white id="skills">
                 <p className="subtitle">Skills</p>
@@ -69,7 +67,7 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={html_icon}
-                            width='150'
+                            width='100'
                             alt='html/css icon'
                         />
                         <p>HTML / CSS</p>
@@ -78,7 +76,7 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={js_icon}
-                            width='150'
+                            width='100'
                             alt='JavaScript icon'
                         />
                         <p>JavaScript</p>
@@ -87,7 +85,7 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={node_icon}
-                            width='150'
+                            width='100'
                             alt='Node.js icon'
                         />
                         <p>Node.js</p>
@@ -99,7 +97,7 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={express_icon}
-                            width='150'
+                            width='100'
                             alt='Express icon'
                         />
                         <p>Express</p>
@@ -108,7 +106,7 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={vue_icon}
-                            width='150'
+                            width='100'
                             alt='Vue.js icon'
                         />
                         <p>Vue.js</p>
@@ -117,13 +115,13 @@ function App() {
                         <img
                             className='rounded-circle'
                             src={react_icon}
-                            width='150'
+                            width='100'
                             alt='React icon'
                         />
                         <p>React</p>
                     </div>
                 </div>
-                <a href="#project"> Next </a>
+                <p className="mb-3"><a href="#project"> Next </a></p>
             </section_white>
             <section_white id="project">
                 <p className="subtitle">Projects</p>
