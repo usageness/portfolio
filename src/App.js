@@ -1,5 +1,4 @@
 import React from 'react';
-import ppic from './img/ppic.jpg';
 import html_icon from './img/icon_html.png';
 import js_icon from './img/icon_js.png';
 import node_icon from './img/icon_node.png';
@@ -11,52 +10,14 @@ import mapleitem_logo from './img/project_logo_mapleitem.png';
 import starrynight_logo from './img/project_logo_starrynight.png';
 import './App.css';
 
+import Main from './page/main';
+import About from './page/about';
+
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <div className="Headline">
-                    <p>Front-End Developer</p>
-                </div>
-                <a
-                    className="App-link"
-                    href="#about"
-                    rel="noopener noreferrer"
-                >
-                    view more
-                </a>
-            </header>
-            <section id="about">
-                <p className="subtitle">About</p>
-                <div className="profile">
-                    <p className="eachdiv">
-                        <img
-                            src={ppic}
-                            width='300'
-                            alt='profile picture'
-                        />
-                    </p>
-                    <p className="eachdiv">
-                        <ul>
-                            <li className="name">김용래_usage</li>
-                            <li className="description">Front-end developer</li>
-                            <li className="description">1997.07.27</li>
-                            <li className="description mt-3"><a href="mailto:kyr9389@naver.com"><i className="fa fa-envelope" aria-hidden="true"></i>kyr9389@naver.com</a></li>
-                            <li className="description"><a href="https://github.com/kyr9389"><i className="fa fa-github" aria-hidden="true"></i>https://github.com/kyr9389</a></li>
-                        </ul>
-                    </p>
-                    <p className="eachdiv">
-                        <ul>
-                            <li className="name">Education</li>
-                            <li className="description">서울과학기술대학교 컴퓨터공학과</li>
-                            <li className="sub_description">2017.03 ~ 재학중</li>
-                            <li className="description">국방부오픈소스아카데미</li>
-                            <li className="sub_description">2019.07 ~ 2019.10</li>
-                        </ul>
-                    </p>
-                </div>
-                <p className="mb-3"> <a href="#skills"> Next </a></p>
-            </section>
+            <Main/>
+            <About/>
             <section_white id="skills">
                 <p className="subtitle">Skills</p>
                 <p className="description">웹에 필요한 전반적인 지식을 바탕으로 다양한 기술을 폭 넓게 공부하고 있습니다.</p>
