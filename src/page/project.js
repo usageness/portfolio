@@ -7,6 +7,24 @@ function project() {
     return (
         <section_white id="project">
             <p className="subtitle">Projects</p>
+
+
+            <div className="projectBlock">
+                <div className="projectWrapper">
+                    <span className="projectTitle">메이플 추가옵션 분석기</span>
+                </div>
+                <div className="projectThumbnail">
+                    <img
+                        className='rounded-circle'
+                        src={mapleitem_logo}
+                        alt='mapleitem_logo'
+                    />
+                </div>
+            </div>
+
+
+
+
             <div>
                 <table>
                     <tr>

@@ -121,6 +121,47 @@ td ul li a {
   color: #000000;
 }
 
+.projectWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #282c34;
+  opacity: .3;
+  transition: all 0.2s;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+.projectWrapper:hover {
+  opacity: .7;
+}
+
+.projectBlock {
+  display: flex;
+  position: relative;
+  width: 20%;
+  min-height: 30vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectTitle {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  font-weight: bold;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+
+.projectThumbnail img {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
 .tableTitle {
   font-weight: bold;
   margin: 0;
