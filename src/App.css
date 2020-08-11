@@ -121,6 +121,12 @@ td ul li a {
   color: #000000;
 }
 
+.projectArea {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .projectWrapper {
   position: absolute;
   width: 100%;
@@ -144,6 +150,7 @@ td ul li a {
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  margin: 1rem;
 }
 
 .projectTitle {

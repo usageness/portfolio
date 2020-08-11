@@ -8,18 +8,48 @@ function project() {
         <section_white id="project">
             <p className="subtitle">Projects</p>
 
+            <div className="projectArea">
 
-            <div className="projectBlock">
-                <div className="projectWrapper">
-                    <span className="projectTitle">메이플 추가옵션 분석기</span>
+                <div className="projectBlock">
+                    <div className="projectWrapper">
+                        <span className="projectTitle">메이플 추가옵션 분석기</span>
+                    </div>
+                    <div className="projectThumbnail">
+                        <img
+                            className='rounded-circle'
+                            src={mapleitem_logo}
+                            alt='mapleitem_logo'
+                        />
+                    </div>
                 </div>
-                <div className="projectThumbnail">
-                    <img
-                        className='rounded-circle'
-                        src={mapleitem_logo}
-                        alt='mapleitem_logo'
-                    />
+
+                <div className="projectBlock">
+                    <div className="projectWrapper">
+                        <span className="projectTitle">Army Q&A</span>
+                    </div>
+                    <div className="projectThumbnail">
+                        <img
+                            className='rounded-circle'
+                            src={army_logo}
+                            alt='army_logo'
+                        />
+                    </div>
                 </div>
+
+                <div className="projectBlock">
+                    <div className="projectWrapper">
+                        <span className="projectTitle">Starry Night</span>
+                    </div>
+                    <div className="projectThumbnail">
+                        <img
+                            className='rounded-circle'
+                            src={starrynight_logo}
+                            alt='starrynight_logo'
+                        />
+                    </div>
+                </div>
+
+
             </div>
 
 
