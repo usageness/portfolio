@@ -3,6 +3,42 @@ import army_logo from "../img/project_logo_army.png";
 import starrynight_logo from "../img/project_logo_starrynight.png";
 import React from "react";
 
+const projectList = [
+    {
+        target: "http://mapleitem.com",
+        title: "메이플 추가옵션 분석기",
+        src: mapleitem_logo
+    },
+    {
+        target: "https://github.com/kyr9389/OSSCAMP_Q-A",
+        title: "Army Q&A",
+        src: army_logo
+    },
+    {
+        target: "https://github.com/kyr9389/Starry_night",
+        title: "Starry Night",
+        src: starrynight_logo
+    },
+]
+
+function ProjectList ({target, title, src}) {
+    return(
+        <div className="projectBlock">
+            <a href={target}>
+                <div className="projectWrapper">
+                    <div className="projectThumbnail">
+                        <img
+                            className='rounded-circle'
+                            src={src}
+                        />
+                    </div>
+                    <span className="projectTitle">{title}</span>
+                </div>
+            </a>
+        </div>
+    )
+}
+
 function project() {
     return (
         <section_white id="project">
@@ -10,50 +46,11 @@ function project() {
 
             <div className="projectArea">
 
-                <div className="projectBlock">
-                    <div className="projectWrapper">
-                        <span className="projectTitle">메이플 추가옵션 분석기</span>
-                    </div>
-                    <div className="projectThumbnail">
-                        <img
-                            className='rounded-circle'
-                            src={mapleitem_logo}
-                            alt='mapleitem_logo'
-                        />
-                    </div>
-                </div>
-
-                <div className="projectBlock">
-                    <div className="projectWrapper">
-                        <span className="projectTitle">Army Q&A</span>
-                    </div>
-                    <div className="projectThumbnail">
-                        <img
-                            className='rounded-circle'
-                            src={army_logo}
-                            alt='army_logo'
-                        />
-                    </div>
-                </div>
-
-                <div className="projectBlock">
-                    <div className="projectWrapper">
-                        <span className="projectTitle">Starry Night</span>
-                    </div>
-                    <div className="projectThumbnail">
-                        <img
-                            className='rounded-circle'
-                            src={starrynight_logo}
-                            alt='starrynight_logo'
-                        />
-                    </div>
-                </div>
-
+                {projectList.map(projectList => {
+                    return <ProjectList target={projectList.target} title={projectList.title} src={projectList.src}/>
+                })}
 
             </div>
-
-
-
 
             <div>
                 <table>
